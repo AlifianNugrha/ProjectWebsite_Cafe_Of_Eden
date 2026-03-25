@@ -24,57 +24,15 @@ const EnvelopeSection = () => {
       <div className="sticky top-0 h-[100dvh] w-full flex flex-col items-center justify-start md:justify-center overflow-y-auto md:overflow-hidden bg-white px-4 md:px-0 pt-20 pb-12 md:py-0">
         
         {/* === THE BIG LETTER CARD (Improved Mobile Accessibility) === */}
-        <div className="relative w-full max-w-[450px] md:max-w-[1000px] md:w-[75vw] bg-[#1a3328] border border-accent/20 shadow-2xl z-10 overflow-hidden flex flex-col md:flex-row shadow-[0_0_80px_rgba(0,0,0,0.5)] flex-shrink-0">
+        <div className="relative w-full max-w-[450px] md:max-w-[1000px] md:w-[75vw] bg-[#1a3328] border border-accent/20 shadow-2xl z-10 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_80px_rgba(0,0,0,0.5)] flex-shrink-0 min-h-[450px] md:min-h-[550px] p-8 md:p-16">
           
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMwMDAiPjwvcmVjdD4KPC9zdmc+')]" />
           
-          {/* Left Column (Heading) - Compact on Mobile */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center p-4 md:p-16 border-b md:border-b-0 md:border-r border-accent/10 relative z-10 text-center md:text-left">
-            <p className="font-body text-accent/50 text-[8px] md:text-xs tracking-[0.4em] uppercase mb-1 md:mb-6">A Letter From</p>
-            <h3 className="font-['NewYork'] text-2xl md:text-6xl text-accent mb-2 md:mb-8 tracking-wider leading-tight">
+          <div className="relative z-10 text-center flex flex-col items-center justify-center">
+            <p className="font-body text-accent/50 text-[10px] md:text-xs tracking-[0.4em] uppercase mb-4 md:mb-8">A Letter From</p>
+            <h3 className="font-['NewYork'] text-5xl md:text-7xl lg:text-9xl text-accent tracking-tighter leading-none">
               At Eden
             </h3>
-            <div className="hidden md:block w-16 h-[1px] bg-accent/30 mx-auto md:mx-0 mb-8" />
-            <p className="font-body text-[10px] md:text-base text-accent-foreground/70 leading-relaxed max-w-sm mb-2 md:mb-8 mx-auto md:mx-0">
-              Every detail is a testament to our commitment.
-            </p>
-          </div>
-
-          {/* Right Column (Contact Form) - More breathable */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center p-5 md:p-14 relative z-10 bg-black/30">
-            <div className="mb-3 md:mb-10 text-center md:text-left">
-              <h4 className="font-heading text-base md:text-xl text-accent/90 tracking-widest uppercase mb-0.5">Write Back</h4>
-              <p className="font-body text-[8px] md:text-[10px] text-accent/20 uppercase tracking-[0.2em]">Contact Us</p>
-            </div>
-            
-            <form className="space-y-4 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                placeholder="NAME"
-                className="w-full px-2 py-3 bg-white/5 border-b border-accent/30 text-accent font-body text-sm tracking-widest placeholder:text-accent/20 focus:outline-none focus:border-accent transition-colors focus:bg-white/10"
-                required
-              />
-              <input
-                type="email"
-                placeholder="EMAIL"
-                className="w-full px-2 py-3 bg-white/5 border-b border-accent/30 text-accent font-body text-sm tracking-widest placeholder:text-accent/20 focus:outline-none focus:border-accent transition-colors focus:bg-white/10"
-                required
-              />
-              <textarea
-                placeholder="MESSAGE"
-                rows={1}
-                className="w-full px-2 py-2 md:py-3 bg-white/5 border-b border-accent/30 text-accent font-body text-sm tracking-widest placeholder:text-accent/20 focus:outline-none focus:border-accent transition-colors resize-none focus:bg-white/10"
-                required
-              />
-              <div className="pt-4 md:pt-6">
-                <button
-                  type="submit"
-                  className="w-full py-4 md:py-5 border border-accent/40 bg-accent/5 text-accent font-body text-[10px] md:text-[11px] tracking-[0.4em] uppercase hover:bg-accent hover:text-[#0f1914] transition-all duration-700 active:scale-95"
-                >
-                  Confirm Message
-                </button>
-              </div>
-            </form>
           </div>
         </div>
 
